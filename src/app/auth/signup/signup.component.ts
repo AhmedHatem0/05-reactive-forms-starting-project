@@ -80,6 +80,9 @@ export class SignupComponent {
     }),
   });
   onSubmit() {
+    if(this.form.invalid) {
+      return;
+    }
     console.log(this.form);
   }
 }
